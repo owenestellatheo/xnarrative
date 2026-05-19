@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 920" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif">
+  <!-- Page background -->
+  <rect width="1280" height="920" fill="#FAF7F2"/>
+
+  <!-- Container padding: 32px each side -->
+  <g transform="translate(32, 32)">
+
+    <!-- Header -->
+    <text x="0" y="22" font-family="Charter, 'Iowan Old Style', Georgia, serif" font-size="26" font-weight="500" fill="#2C2C2A" letter-spacing="-0.3">xnarrative</text>
+    <text x="1216" y="22" font-size="11" fill="#888780" text-anchor="end" letter-spacing="0.5">RUN 2026-05-19 14:32 UTC</text>
+
+    <!-- Meta line -->
+    <text x="0" y="52" font-size="12" fill="#5F5E5A">
+      <tspan>Query: </tspan>
+      <tspan fill="#2C2C2A">"sentiment in tehran on the US and the new admin"</tspan>
+      <tspan> · Languages: </tspan>
+      <tspan fill="#2C2C2A">en, fa, ar</tspan>
+      <tspan> · Window: </tspan>
+      <tspan fill="#2C2C2A">last 24h</tspan>
+      <tspan> · n = </tspan>
+      <tspan fill="#2C2C2A">287 tweets</tspan>
+    </text>
+
+    <!-- Divider -->
+    <line x1="0" y1="70" x2="1216" y2="70" stroke="#3C342814" stroke-width="0.5"/>
+
+    <!-- Stat row: 5 boxes -->
+    <g transform="translate(0, 90)">
+      <!-- Box 1 -->
+      <rect width="232" height="64" rx="8" fill="#F1EFE8"/>
+      <text x="14" y="34" font-size="22" font-weight="500" fill="#2C2C2A">287</text>
+      <text x="14" y="52" font-size="10.5" fill="#5F5E5A" letter-spacing="0.5">TWEETS</text>
+      <!-- Box 2 -->
+      <g transform="translate(244, 0)">
+        <rect width="232" height="64" rx="8" fill="#F1EFE8"/>
+        <text x="14" y="34" font-size="22" font-weight="500" fill="#2C2C2A">3</text>
+        <text x="14" y="52" font-size="10.5" fill="#5F5E5A" letter-spacing="0.5">LANGUAGES</text>
+      </g>
+      <!-- Box 3 -->
+      <g transform="translate(488, 0)">
+        <rect width="232" height="64" rx="8" fill="#F1EFE8"/>
+        <text x="14" y="34" font-size="22" font-weight="500" fill="#2C2C2A">196</text>
+        <text x="14" y="52" font-size="10.5" fill="#5F5E5A" letter-spacing="0.5">AUTHORS</text>
+      </g>
+      <!-- Box 4 - amber -->
+      <g transform="translate(732, 0)">
+        <rect width="232" height="64" rx="8" fill="#F1EFE8"/>
+        <text x="14" y="34" font-size="22" font-weight="500" fill="#BA7517">7</text>
+        <text x="14" y="52" font-size="10.5" fill="#5F5E5A" letter-spacing="0.5">ENG. OUTLIERS</text>
+      </g>
+      <!-- Box 5 - red -->
+      <g transform="translate(976, 0)">
+        <rect width="240" height="64" rx="8" fill="#F1EFE8"/>
+        <text x="14" y="34" font-size="22" font-weight="500" fill="#A32D2D">2</text>
+        <text x="14" y="52" font-size="10.5" fill="#5F5E5A" letter-spacing="0.5">TEMPORAL SPIKES</text>
+      </g>
+    </g>
+
+    <!-- Tab bar -->
+    <g transform="translate(0, 180)">
+      <line x1="0" y1="35" x2="1216" y2="35" stroke="#3C342814" stroke-width="0.5"/>
+      <!-- Active tab: Overview -->
+      <text x="14" y="22" font-size="13" font-weight="500" fill="#2C2C2A">Overview</text>
+      <line x1="0" y1="35" x2="84" y2="35" stroke="#2C2C2A" stroke-width="2"/>
+      <!-- Inactive tabs -->
+      <text x="98" y="22" font-size="13" fill="#5F5E5A">Timeline</text>
+      <text x="182" y="22" font-size="13" fill="#5F5E5A">Outliers</text>
+      <text x="266" y="22" font-size="13" fill="#5F5E5A">Per-language</text>
+      <text x="378" y="22" font-size="13" fill="#5F5E5A">Knowledge graph</text>
+      <text x="510" y="22" font-size="13" fill="#5F5E5A">Raw tweets</text>
+    </g>
+
+    <!-- Bottom-line callout -->
+    <g transform="translate(0, 240)">
+      <rect width="1216" height="86" rx="0" fill="#FAEEDA"/>
+      <rect width="3" height="86" fill="#BA7517"/>
+      <text x="20" y="22" font-size="11" font-weight="500" fill="#412402" letter-spacing="0.9">BOTTOM LINE</text>
+      <text font-family="Charter, 'Iowan Old Style', Georgia, serif" font-size="15" fill="#412402">
+        <tspan x="20" y="48">Tehran discourse is dominated by economic grievance, with the Pezeshkian administration getting cautious benefit-of-the-doubt on diplomacy but</tspan>
+        <tspan x="20" y="68">sustained criticism over inflation and the rial collapse. US-directed sentiment splits sharply along language lines — Farsi-language posts</tspan>
+        <tspan x="20" y="88">increasingly weary, Arabic-language posts more hostile.</tspan>
+      </text>
+    </g>
+
+    <!-- Body: two columns -->
+    <g transform="translate(0, 360)">
+
+      <!-- Left column: narrative (2/3 of width = ~800px) -->
+      <g>
+        <text x="0" y="14" font-family="Charter, 'Iowan Old Style', Georgia, serif" font-size="17" font-weight="500" fill="#2C2C2A">Narrative</text>
+
+        <text font-size="13.5" fill="#2C2C2A">
+          <tspan x="0" y="42">The dominant Farsi-language narrative centers on economic distress — rial volatility, food prices, and pension</tspan>
+          <tspan x="0" y="64">shortfalls account for roughly 41% of on-topic content. The Pezeshkian administration receives mixed-to-supportive</tspan>
+          <tspan x="0" y="86">sentiment on foreign policy posture (37% support / 24% oppose / 39% mixed) but predominantly negative sentiment</tspan>
+          <tspan x="0" y="108">on economic management. This is a notable divergence from typical Iranian political Twitter, where domestic and</tspan>
+          <tspan x="0" y="130">foreign policy sentiment usually move together.</tspan>
+
+          <tspan x="0" y="166">Sentiment toward the United States is strongly negative across all three languages (62% oppose aggregated), but the</tspan>
+          <tspan x="0" y="188">texture differs: Farsi-language discourse frames US policy as a constraint on Iranian economic life, while Arabic-</tspan>
+          <tspan x="0" y="210">language posts (largely Gulf-origin) emphasize regional posture and the Houthi file. English-language posts skew</tspan>
+          <tspan x="0" y="232">toward diaspora commentary and human rights — a genuinely separate conversation that aggregation flattens.</tspan>
+
+          <tspan x="0" y="268">Notable absence: very little discussion of the nuclear file relative to baseline. Either the topic is being deprioritized</tspan>
+          <tspan x="0" y="290">in real-time, or it's being routed to channels not captured by this search.</tspan>
+        </text>
+
+        <text x="0" y="338" font-family="Charter, 'Iowan Old Style', Georgia, serif" font-size="17" font-weight="500" fill="#2C2C2A">Cross-language divergence</text>
+
+        <text font-size="13.5" fill="#2C2C2A">
+          <tspan x="0" y="366">The three language communities are talking about meaningfully different things. Farsi: lived economic experience</tspan>
+          <tspan x="0" y="388">and cautious diplomatic hope. Arabic: regional balance-of-power, mostly hostile framing toward both Tehran and</tspan>
+          <tspan x="0" y="410">Washington. English: diaspora-driven human rights and prisoner cases. An analyst should not treat aggregated</tspan>
+          <tspan x="0" y="432">sentiment as representative of any one audience.</tspan>
+        </text>
+      </g>
+
+      <!-- Right column: sentiment + themes -->
+      <g transform="translate(820, 0)">
+        <text x="0" y="14" font-size="12.5" fill="#5F5E5A" letter-spacing="0.3">Sentiment by entity</text>
+
+        <!-- Sentiment row 1: United States -->
+        <text x="0" y="40" font-size="12" fill="#2C2C2A">United States</text>
+        <text x="396" y="40" font-size="11" fill="#888780" text-anchor="end">n=198</text>
+        <g transform="translate(0, 46)">
+          <rect width="55.4" height="18" rx="3" fill="#C0DD97"/>
+          <text x="27.7" y="13" font-size="10" font-weight="500" fill="#173404" text-anchor="middle" dy="0">14%</text>
+          <rect x="55.4" width="95" height="18" fill="#D3D1C7"/>
+          <text x="103" y="13" font-size="10" font-weight="500" fill="#2C2C2A" text-anchor="middle">24%</text>
+          <rect x="150.4" width="245.6" height="18" rx="0" fill="#F09595"/>
+          <text x="273" y="13" font-size="10" font-weight="500" fill="#501313" text-anchor="middle">62%</text>
+          <!-- Round right corner only -->
+          <rect x="378" width="18" height="18" rx="3" fill="#F09595"/>
+          <rect x="378" width="9" height="18" fill="#F09595"/>
+        </g>
+
+        <!-- Sentiment row 2: Pezeshkian admin -->
+        <text x="0" y="92" font-size="12" fill="#2C2C2A">Pezeshkian admin</text>
+        <text x="396" y="92" font-size="11" fill="#888780" text-anchor="end">n=164</text>
+        <g transform="translate(0, 98)">
+          <rect width="146.5" height="18" rx="3" fill="#C0DD97"/>
+          <rect width="9" height="18" fill="#C0DD97"/>
+          <text x="73" y="13" font-size="10" font-weight="500" fill="#173404" text-anchor="middle">37%</text>
+          <rect x="146.5" width="154.4" height="18" fill="#D3D1C7"/>
+          <text x="223.7" y="13" font-size="10" font-weight="500" fill="#2C2C2A" text-anchor="middle">39%</text>
+          <rect x="300.9" width="95" height="18" rx="3" fill="#F09595"/>
+          <rect x="300.9" width="9" height="18" fill="#F09595"/>
+          <text x="348" y="13" font-size="10" font-weight="500" fill="#501313" text-anchor="middle">24%</text>
+        </g>
+
+        <!-- Legend -->
+        <g transform="translate(0, 138)" font-size="10" fill="#5F5E5A">
+          <rect width="9" height="9" rx="2" fill="#C0DD97"/>
+          <text x="14" y="9">Support</text>
+          <rect x="64" width="9" height="9" rx="2" fill="#D3D1C7"/>
+          <text x="78" y="9">Mixed</text>
+          <rect x="118" width="9" height="9" rx="2" fill="#F09595"/>
+          <text x="132" y="9">Oppose</text>
+        </g>
+
+        <!-- Top themes -->
+        <text x="0" y="180" font-size="12.5" fill="#5F5E5A" letter-spacing="0.3">Top themes</text>
+
+        <g transform="translate(0, 198)">
+          <!-- Theme bars - top 3 are amber-600, mid are amber-400, bottom are amber-200 -->
+          <g transform="translate(0, 0)">
+            <rect width="364" height="16" rx="2" fill="#BA7517"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#FAEEDA">inflation 89</text>
+          </g>
+          <g transform="translate(0, 21)">
+            <rect width="309" height="16" rx="2" fill="#BA7517"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#FAEEDA">rial 71</text>
+          </g>
+          <g transform="translate(0, 42)">
+            <rect width="253" height="16" rx="2" fill="#BA7517"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#FAEEDA">sanctions 58</text>
+          </g>
+          <g transform="translate(0, 63)">
+            <rect width="201" height="16" rx="2" fill="#EF9F27"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#412402">diplomacy 46</text>
+          </g>
+          <g transform="translate(0, 84)">
+            <rect width="174" height="16" rx="2" fill="#EF9F27"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#412402">pensions 40</text>
+          </g>
+          <g transform="translate(0, 105)">
+            <rect width="142" height="16" rx="2" fill="#EF9F27"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#412402">cabinet 32</text>
+          </g>
+          <g transform="translate(0, 126)">
+            <rect width="111" height="16" rx="2" fill="#FAC775"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#412402">housing 25</text>
+          </g>
+          <g transform="translate(0, 147)">
+            <rect width="87" height="16" rx="2" fill="#FAC775"/>
+            <text x="7" y="11" font-size="10.5" font-weight="500" fill="#412402">protests 19</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

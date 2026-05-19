@@ -1,0 +1,28 @@
+# Secrets
+.env
+session.json
+
+# Cache (everything inside, but keep the directory)
+cache/*
+!cache/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Data
+*.parquet
+*.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
