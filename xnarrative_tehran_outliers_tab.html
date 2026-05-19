@@ -1,0 +1,83 @@
+<div style="background: var(--color-background-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; font-family: var(--font-sans);">
+
+  <!-- Tab bar -->
+  <div style="display: flex; gap: 0; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 1.25rem; font-size: 13px;">
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Overview</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Timeline</div>
+    <div style="padding: 8px 14px; border-bottom: 2px solid var(--color-text-primary); font-weight: 500;">Outliers</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Per-language</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Knowledge graph</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Raw tweets</div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+
+    <!-- Engagement outliers -->
+    <div>
+      <h2 style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; margin: 0 0 4px;">Engagement outliers</h2>
+      <div style="font-size: 11.5px; color: var(--color-text-secondary); margin-bottom: 12px;">Disproportionate reach given follower count</div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-warning); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"The chicken at Tajrish is now 1.2M rials per kilo. The minister speaks of stability while we cannot feed our children. [in Farsi]"</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@mahsa_t_1985</a> · 847 followers · 18,400 ♥ · 9,200 ↻ · fa · <span style="color: var(--color-text-warning);">z = 5.2</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-warning); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"Pezeshkian's Doha team includes Araghchi. This is the first cabinet in 8 years that does not include hardline factions in foreign policy roles."</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@gulf_analyst_h</a> · 2,100 followers · 6,800 ♥ · 4,200 ↻ · en · <span style="color: var(--color-text-warning);">z = 4.1</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-warning); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"My pension was 14M rials last year. After conversion it is now worth less than 200 dollars. Whose 'new administration' is this? [in Farsi]"</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@reza_bazargan</a> · 312 followers · 5,400 ♥ · 3,100 ↻ · fa · <span style="color: var(--color-text-warning);">z = 3.8</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-warning); padding: 10px 14px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"American sanctions don't hurt the regime, they hurt my mother's medicine prices. [in Arabic]"</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@layla_baghdad</a> · 1,400 followers · 4,200 ♥ · 2,800 ↻ · ar · <span style="color: var(--color-text-warning);">z = 3.2</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sentiment outliers -->
+    <div>
+      <h2 style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; margin: 0 0 4px;">Sentiment outliers</h2>
+      <div style="font-size: 11.5px; color: var(--color-text-secondary); margin-bottom: 12px;">Cuts against the dominant narrative</div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-danger); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"Honestly, give Pezeshkian a year. The economic mess is not from this cabinet, and the diplomatic opening with Doha is the first real movement in years. [in Farsi]"</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@economist_qom</a> · 12,400 followers · 890 ♥ · 240 ↻ · fa · <span style="color: var(--color-text-danger);">score = 1.84, sent = +1.5</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-danger); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"The US delegation in Doha is theater. They will offer nothing meaningful. Why does Iranian Twitter act like this is hope? It is the same play we have watched for 20 years."</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@p_skeptical</a> · 4,800 followers · 1,200 ♥ · 380 ↻ · en · <span style="color: var(--color-text-danger);">score = 1.62, sent = -1.8</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-danger); padding: 10px 14px; margin-bottom: 10px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"The administration is doing fine. People complaining about prices have always complained about prices. [in Farsi]"</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@hossein_official</a> · 28,200 followers · 420 ♥ · 95 ↻ · fa · <span style="color: var(--color-text-danger);">score = 1.41, sent = +2.0</span>
+        </div>
+      </div>
+
+      <div style="background: var(--color-background-primary); border-left: 3px solid var(--color-border-danger); padding: 10px 14px; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; font-size: 12.5px;">
+        <div style="line-height: 1.55; margin-bottom: 6px;">"Talks with Washington under any framing legitimize the regime. The protests of 2022 were not for diplomatic openings — they were for the regime's end."</div>
+        <div style="font-size: 10.5px; color: var(--color-text-secondary);">
+          <a href="#" style="color: var(--color-text-info); text-decoration: none;">@azadi_diaspora</a> · 6,100 followers · 2,100 ♥ · 740 ↻ · en · <span style="color: var(--color-text-danger);">score = 1.28, sent = -2.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

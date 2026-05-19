@@ -1,0 +1,137 @@
+<div style="background: var(--color-background-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; font-family: var(--font-sans);">
+
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+    <h1 style="font-family: var(--font-serif); font-size: 22px; font-weight: 500; margin: 0; letter-spacing: -0.01em;">xnarrative</h1>
+    <span style="font-size: 11px; color: var(--color-text-tertiary); letter-spacing: 0.05em;">RUN 2026-05-19 14:32 UTC</span>
+  </div>
+  <div style="font-size: 12px; color: var(--color-text-secondary); margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 0.5px solid var(--color-border-tertiary);">
+    Query: <span style="color: var(--color-text-primary);">"sentiment in tehran on the US and the new admin"</span>
+    · Languages: <span style="color: var(--color-text-primary);">en, fa, ar</span>
+    · Window: <span style="color: var(--color-text-primary);">last 24h</span>
+    · n = <span style="color: var(--color-text-primary);">287 tweets</span>
+  </div>
+
+  <!-- Stat row -->
+  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 1.25rem;">
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px;">
+      <div style="font-size: 22px; font-weight: 500;">287</div>
+      <div style="font-size: 11px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">tweets</div>
+    </div>
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px;">
+      <div style="font-size: 22px; font-weight: 500;">3</div>
+      <div style="font-size: 11px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">languages</div>
+    </div>
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px;">
+      <div style="font-size: 22px; font-weight: 500;">196</div>
+      <div style="font-size: 11px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">authors</div>
+    </div>
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px;">
+      <div style="font-size: 22px; font-weight: 500; color: var(--color-text-warning);">7</div>
+      <div style="font-size: 11px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">eng. outliers</div>
+    </div>
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px;">
+      <div style="font-size: 22px; font-weight: 500; color: var(--color-text-danger);">2</div>
+      <div style="font-size: 11px; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">temporal spikes</div>
+    </div>
+  </div>
+
+  <!-- Tab bar -->
+  <div style="display: flex; gap: 0; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 1.25rem; font-size: 13px;">
+    <div style="padding: 8px 14px; border-bottom: 2px solid var(--color-text-primary); font-weight: 500;">Overview</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Timeline</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Outliers</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Per-language</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Knowledge graph</div>
+    <div style="padding: 8px 14px; color: var(--color-text-secondary);">Raw tweets</div>
+  </div>
+
+  <!-- Bottom line -->
+  <div style="background: var(--color-background-warning); border-left: 3px solid var(--color-border-warning); padding: 14px 18px; margin-bottom: 1.25rem; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;">
+    <div style="font-size: 11px; font-weight: 500; color: var(--color-text-warning); letter-spacing: 0.08em; margin-bottom: 6px;">BOTTOM LINE</div>
+    <div style="font-family: var(--font-serif); font-size: 15px; line-height: 1.5; color: var(--color-text-warning);">Tehran discourse is dominated by economic grievance, with the Pezeshkian administration getting cautious benefit-of-the-doubt on diplomacy but sustained criticism over inflation and the rial collapse. US-directed sentiment splits sharply along language lines — Farsi-language posts increasingly weary, Arabic-language posts more hostile.</div>
+  </div>
+
+  <!-- Two-column body -->
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.25rem;">
+
+    <!-- Narrative -->
+    <div>
+      <h2 style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; margin: 0 0 10px;">Narrative</h2>
+      <div style="font-size: 13.5px; line-height: 1.65; color: var(--color-text-primary);">
+        <p style="margin: 0 0 12px;">The dominant Farsi-language narrative centers on economic distress — rial volatility, food prices, and pension shortfalls account for roughly 41% of on-topic content. The Pezeshkian administration receives mixed-to-supportive sentiment on foreign policy posture (37% support / 24% oppose / 39% mixed) but predominantly negative sentiment on economic management. This is a notable divergence from typical Iranian political Twitter, where domestic and foreign policy sentiment usually move together.</p>
+        <p style="margin: 0 0 12px;">Sentiment toward the United States is strongly negative across all three languages (62% oppose aggregated), but the texture differs: Farsi-language discourse frames US policy as a constraint on Iranian economic life, while Arabic-language posts (largely Gulf-origin) emphasize regional posture and the Houthi file. English-language posts skew toward diaspora commentary and human rights — a genuinely separate conversation that aggregation flattens.</p>
+        <p style="margin: 0;">Notable absence: very little discussion of the nuclear file relative to baseline. Either the topic is being deprioritized in real-time, or it's being routed to channels not captured by this search.</p>
+      </div>
+
+      <h2 style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; margin: 1.25rem 0 10px;">Cross-language divergence</h2>
+      <div style="font-size: 13.5px; line-height: 1.65; color: var(--color-text-primary);">
+        The three language communities are talking about meaningfully different things. Farsi: lived economic experience and cautious diplomatic hope. Arabic: regional balance-of-power, mostly hostile framing toward both Tehran and Washington. English: diaspora-driven human rights and prisoner cases. An analyst should not treat aggregated sentiment as representative of any one audience.
+      </div>
+    </div>
+
+    <!-- Sidebar: sentiment + themes -->
+    <div>
+      <h3 style="font-size: 13px; font-weight: 500; margin: 0 0 10px; color: var(--color-text-secondary); letter-spacing: 0.03em;">Sentiment by entity</h3>
+
+      <!-- Sentiment bars -->
+      <div style="margin-bottom: 18px;">
+        <div style="font-size: 12px; margin-bottom: 4px; display: flex; justify-content: space-between;">
+          <span style="color: var(--color-text-primary);">United States</span>
+          <span style="color: var(--color-text-tertiary); font-size: 11px;">n=198</span>
+        </div>
+        <div style="display: flex; height: 18px; border-radius: 3px; overflow: hidden; font-size: 10px; font-weight: 500;">
+          <div style="background: #C0DD97; color: #173404; width: 14%; display: flex; align-items: center; justify-content: center;">14%</div>
+          <div style="background: #D3D1C7; color: #2C2C2A; width: 24%; display: flex; align-items: center; justify-content: center;">24%</div>
+          <div style="background: #F09595; color: #501313; width: 62%; display: flex; align-items: center; justify-content: center;">62%</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 18px;">
+        <div style="font-size: 12px; margin-bottom: 4px; display: flex; justify-content: space-between;">
+          <span style="color: var(--color-text-primary);">Pezeshkian admin</span>
+          <span style="color: var(--color-text-tertiary); font-size: 11px;">n=164</span>
+        </div>
+        <div style="display: flex; height: 18px; border-radius: 3px; overflow: hidden; font-size: 10px; font-weight: 500;">
+          <div style="background: #C0DD97; color: #173404; width: 37%; display: flex; align-items: center; justify-content: center;">37%</div>
+          <div style="background: #D3D1C7; color: #2C2C2A; width: 39%; display: flex; align-items: center; justify-content: center;">39%</div>
+          <div style="background: #F09595; color: #501313; width: 24%; display: flex; align-items: center; justify-content: center;">24%</div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px; font-size: 10px; color: var(--color-text-secondary); margin-bottom: 22px;">
+        <span style="display: flex; align-items: center; gap: 4px;"><span style="width:9px;height:9px;border-radius:2px;background:#C0DD97;"></span>Support</span>
+        <span style="display: flex; align-items: center; gap: 4px;"><span style="width:9px;height:9px;border-radius:2px;background:#D3D1C7;"></span>Mixed</span>
+        <span style="display: flex; align-items: center; gap: 4px;"><span style="width:9px;height:9px;border-radius:2px;background:#F09595;"></span>Oppose</span>
+      </div>
+
+      <h3 style="font-size: 13px; font-weight: 500; margin: 0 0 10px; color: var(--color-text-secondary); letter-spacing: 0.03em;">Top themes</h3>
+      <div style="font-size: 12px;">
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 92%; height: 16px; background: #BA7517; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #FAEEDA; font-size: 10.5px; font-weight: 500;">inflation 89</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 78%; height: 16px; background: #BA7517; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #FAEEDA; font-size: 10.5px; font-weight: 500;">rial 71</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 64%; height: 16px; background: #BA7517; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #FAEEDA; font-size: 10.5px; font-weight: 500;">sanctions 58</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 51%; height: 16px; background: #EF9F27; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #412402; font-size: 10.5px; font-weight: 500;">diplomacy 46</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 44%; height: 16px; background: #EF9F27; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #412402; font-size: 10.5px; font-weight: 500;">pensions 40</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 36%; height: 16px; background: #EF9F27; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #412402; font-size: 10.5px; font-weight: 500;">cabinet 32</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 28%; height: 16px; background: #FAC775; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #412402; font-size: 10.5px; font-weight: 500;">housing 25</div>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 5px;">
+          <div style="width: 22%; height: 16px; background: #FAC775; border-radius: 2px; display: flex; align-items: center; padding-left: 6px; color: #412402; font-size: 10.5px; font-weight: 500;">protests 19</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
