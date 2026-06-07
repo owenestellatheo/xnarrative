@@ -5,6 +5,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Fall back to Streamlit secrets when running on Streamlit Cloud
+try:
+    import streamlit as st
+    _secret_keys = ["ANTHROPIC_API_KEY", "VOYAGE_API_KEY", "X_USERNAME", "X_EMAIL", "X_PASSWORD"]
+    for _k in _secret_keys:
+        if not os.getenv(_k) and _k in st.secrets:
+            os.environ[_k] = st.secrets[_k]
+except Exception:
+    pass
+
 # --- API keys ---
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 VOYAGE_API_KEY = os.getenv("VOYAGE_API_KEY")

@@ -21,7 +21,7 @@ import plotly.graph_objects as go
 
 from config import CACHE_DIR
 
-st.set_page_config(page_title="xnarrative", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="xnarrative", layout="wide", initial_sidebar_state="expanded")
 
 # ============================================================
 # Design tokens — single source of truth
@@ -271,6 +271,46 @@ st.markdown(CSS, unsafe_allow_html=True)
 
 
 # ============================================================
+# Sidebar — run a new analysis
+# ============================================================
+with st.sidebar:
+    st.markdown("### Run analysis")
+    query_input = st.text_area(
+        "Query",
+        placeholder="e.g. sentiment in Tehran on the US and the new administration",
+        height=100,
+    )
+    lang_options = ["en", "fa", "ar", "es", "fr", "de", "zh", "ru", "tr", "pt"]
+    languages_input = st.multiselect("Languages", lang_options, default=["en"])
+    hours_input = st.slider("Time window (hours)", 6, 168, 24, step=6)
+    run_clicked = st.button("Run", type="primary", use_container_width=True)
+    st.markdown(
+        "<div style='font-size:11px;color:#888;margin-top:8px'>"
+        "Takes 3–7 min. One run at a time — don't click twice."
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
+if run_clicked:
+    if not query_input.strip():
+        st.sidebar.error("Enter a query first.")
+    elif not languages_input:
+        st.sidebar.error("Select at least one language.")
+    else:
+        from analyze import run_pipeline, _invalidate_from
+        _invalidate_from("scrape")
+        try:
+            with st.spinner("Running pipeline — this takes 3–7 minutes…"):
+                run_pipeline(query_input.strip(), languages_input, hours_input)
+            st.cache_data.clear()
+            st.rerun()
+        except SystemExit:
+            st.error("No tweets found for that query. Try broadening the search or changing the time window.")
+        except Exception as e:
+            st.error(f"Pipeline failed: {e}")
+
+
+# ============================================================
 # Load
 # ============================================================
 @st.cache_data
@@ -284,7 +324,7 @@ def load_bundle():
 
 bundle = load_bundle()
 if bundle is None:
-    st.error("No pipeline output found. Run `python analyze.py \"your query\" --languages en,fa,ar` first.")
+    st.info("No analysis yet — enter a query in the sidebar and click **Run** to get started.")
     st.stop()
 
 df = bundle["df"]
