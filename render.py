@@ -323,9 +323,40 @@ def load_bundle():
 
 
 bundle = load_bundle()
-if bundle is None:
-    st.info("No analysis yet — enter a query in the sidebar and click **Run** to get started.")
-    st.stop()
+  if bundle is None:
+      _, col, _ = st.columns([1, 2, 1])
+      with col:
+          st.markdown("<h2 class='serif' style='margin-bottom:1rem'>Run an analysis</h2>", unsafe_allow_html=True)
+          q = st.text_area("Query", placeholder="e.g. sentiment in Tehran on the
+  US and the new administration", height=100, key="main_query")
+          langs = st.multiselect("Languages", ["en", "fa", "ar", "es", "fr",
+  "de", "zh", "ru", "tr", "pt"], default=["en"], key="main_langs")
+          hrs = st.slider("Time window (hours)", 6, 168, 24, step=6,
+  key="main_hours")
+          if st.button("Run", type="primary", use_container_width=True,
+  key="main_run"):
+              if not q.strip():
+                  st.error("Enter a query first.")
+              elif not langs:
+                  st.error("Select at least one language.")
+              else:
+                  from analyze import run_pipeline, _invalidate_from
+                  _invalidate_from("scrape")
+                  try:
+                      with st.spinner("Running pipeline — this takes 3–7 minutes…"):
+                          run_pipeline(q.strip(), langs, hrs)
+                      st.cache_data.clear()
+                      st.rerun()
+                  except SystemExit:
+                      st.error("No tweets found for that query. Try broadening the search or changing the time window.")
+                  except Exception as e:
+                      st.error(f"Pipeline failed: {e}")
+          st.markdown(
+              "<div style='font-size:11px;color:#888;margin-top:8px;text-align:center'>"
+              "Takes 3–7 min. One run at a time — don't click twice.</div>",
+              unsafe_allow_html=True,
+          )
+      st.stop()
 
 df = bundle["df"]
 narrative = bundle["narrative"]
