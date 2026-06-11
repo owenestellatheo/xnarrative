@@ -327,8 +327,7 @@ if bundle is None:
       _, col, _ = st.columns([1, 2, 1])
       with col:
           st.markdown("<h2 class='serif' style='margin-bottom:1rem'>Run an analysis</h2>", unsafe_allow_html=True)
-          q = st.text_area("Query", placeholder="e.g. sentiment in Tehran on the
-  US and the new administration", height=100, key="main_query")
+          q = st.text_area("Query", placeholder="e.g. sentiment in Tehran on the US and the new administration", height=100, key="main_query")
           langs = st.multiselect("Languages", ["en", "fa", "ar", "es", "fr",
   "de", "zh", "ru", "tr", "pt"], default=["en"], key="main_langs")
           hrs = st.slider("Time window (hours)", 6, 168, 24, step=6,
