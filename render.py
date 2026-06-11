@@ -323,7 +323,7 @@ def load_bundle():
 
 
 bundle = load_bundle()
-  if bundle is None:
+if bundle is None:
       _, col, _ = st.columns([1, 2, 1])
       with col:
           st.markdown("<h2 class='serif' style='margin-bottom:1rem'>Run an analysis</h2>", unsafe_allow_html=True)
